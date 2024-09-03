@@ -1,0 +1,81 @@
+.home-btn {
+  color: white;
+  background: linear-gradient(90deg, #E88A2D 0%, #ff5733 50%, #DB4A2B 100%);
+  border: 2px solid transparent;
+  border-radius: 999px; 
+  font-size: 4rem;
+  padding: 10px 60px;
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease, background 0.3s ease;
+}
+
+.home-btn:hover {
+  color: white; 
+  background: rgba(255, 87, 51, 0.2); 
+  border-color: white;
+}
+
+
+
+
+.register-custom {
+  font-size: 3rem;
+}
+
+.home-register-section{
+  height: calc(100vh - 58.64px);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)),url("../../assets/images/home.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  h1{
+    color: white;
+    text-align: center;
+    font-size: 3.5rem;
+  }
+  
+}
+
+.home-info-section{
+  min-height: 100vh;
+
+  h1{
+    text-align: center;
+  }
+
+  .division-section{
+    background-color: var(--trio);
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding-block: 20px;
+  }
+}
+
+.home-card{
+  img {
+    height: 200px;
+    object-fit: cover;
+    object-position: top;
+}
+}
+
+.home-logo{
+  img{
+    width: 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  .home-btn {
+    font-size: 2.5rem; 
+    padding: 8px 40px; 
+  }
+}
+
+@media (max-width: 576px) {
+  .home-btn {
+    font-size: 2.5rem;  
+    padding: 9px 35px;  
+  }
+}

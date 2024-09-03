@@ -1,0 +1,64 @@
+:root {
+  --trio: #ff5733;
+  --trio2: #DB4A2B;
+  --dark: #6C757D;
+  --dark2: #54595E;
+}
+
+.trio-btn {
+  border-radius: 20px;
+  padding: 5px 15px;
+  min-height: 38px;
+  background-color: var(--trio);
+  color: white;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.trio-btn:hover {
+  background-color: var(--trio2);
+}
+
+.trio-cancel-btn {
+  border-radius: 20px;
+  padding: 5px 15px;
+  min-height: 38px;
+  background-color: var(--dark);
+  color: white;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.trio-cancel-btn:hover {
+  background-color: var(--dark2);
+}
+
+.trio-outline-btn {
+  color: var(--trio);
+  background-color: rgba(0, 0, 0, 0);
+  min-height: 38px;
+  border: 2px solid var(--trio);
+  border-radius: 25px;
+  font-size: 1.3rem;
+  transition: background-color 0.3s ease;
+}
+
+.trio-outline-btn:hover {
+  color: white;
+  background-color: var(--trio);
+  border: 2px solid var(--trio);
+}
+
+.trio-input{
+  border-radius: 20px;
+  transition: border-color 0.3s ease;
+  outline: none;
+  box-shadow: none;
+  width: 30vw;
+}
+
+.trio-input:focus{
+  border-color: var(--trio);
+  outline: none;
+  box-shadow: none;
+} 

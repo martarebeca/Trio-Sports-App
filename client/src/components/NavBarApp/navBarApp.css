@@ -1,0 +1,11 @@
+:root {
+  --trio: #ff5733;
+}
+
+.nav-logo {
+  height: 2rem;
+}
+
+.select-borde{
+  border-bottom: 2px solid rgb(115, 115, 115) !important;
+}

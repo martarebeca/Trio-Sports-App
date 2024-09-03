@@ -1,0 +1,61 @@
+.filter-input-allusers,
+.filter-select-allusers{
+  border-radius: 20px;
+  padding: 5px 15px;
+  height: 38px;
+  border: 1px solid #ced4da;
+  background-color: #f8f9fa;
+  transition: border-color 0.3s ease;
+  outline: none;
+  box-shadow: none;
+  width: 150px;
+
+}
+
+.filter-select-allusers:focus,
+.filter-input-allusers:focus {
+  border-color: var(--trio);
+  outline: none;
+  box-shadow: none;
+}
+
+.filter-button-allusers {
+  border-radius: 20px;
+  padding: 5px 15px;
+  height: 38px;
+  background-color: #ff5733;
+  color: white;
+  border: none;
+  transition: background-color 0.3s ease;
+  width: 150px;
+}
+
+.filter-button-allusers:hover {
+  background-color: #e04e2e;
+}
+
+.filter-group {
+  margin-bottom: 0;
+}
+
+.custom-divider {
+  height: 5px; 
+  background-color: #ff5733; 
+  margin: 20px 0; 
+  border-radius: 2px; 
+}
+
+.msg-allusers{
+  text-align: center;
+  color: #ff5733;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+@media (max-width: 576px){
+  .filter-select-allusers,
+  .filter-input-allusers,
+  .filter-button-allusers{
+    width: 70vw;
+  }
+}

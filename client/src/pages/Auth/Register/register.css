@@ -1,0 +1,232 @@
+:root {
+  --trio: #ff5733;
+  --trio2: #DB4A2B;
+  --dark: #6C757D;
+  --dark2: #54595E;
+}
+
+
+.body-register{
+  display: flex;
+  justify-content: center;
+  padding-top: 15vh;
+  height: calc(100vh - 98.43px);
+}
+
+.container1{
+  height: 156px;
+  display: flex;
+  align-items: center;
+}
+
+.list-genders, .list-sports, .block{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #F6F6F6;
+  width: 30vw;
+  height: 260.89px;
+  gap: 10px;
+  border-radius: 15px;
+}
+
+.list-genders button{
+  width: 80%;
+}
+
+.all_genders{
+  max-height: 150px;
+  overflow-y: auto;
+  width: 20vw;
+  overflow-x: hidden
+}
+
+.list-group-item.active {
+  background-color: var(--trio);
+  border-color: var(--trio2);
+}
+
+.error-msg{
+  color: red;
+  font-size: 14px;
+}
+
+.trio-input{
+  border-radius: 20px;
+  transition: border-color 0.3s ease;
+  outline: none;
+  box-shadow: none;
+  width: 30vw;
+}
+.trio-input:focus{
+  border-color: var(--trio);
+  outline: none;
+  box-shadow: none;
+} 
+
+.custom-progress .progress-bar {
+  background-color:var(--trio);
+}
+.custom-progress{
+  margin-bottom: 5vh;
+  width: 40vw;
+}
+.email-password ,.name ,.birthDate, .city, .gender, .sports, .description, .photo, .auth{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.buttons-email{
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  width: 25vw;
+  margin-top: 10vh;
+  flex-wrap: wrap;
+}
+
+
+.buttons-general{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 25vw;
+  margin-top: 10vh;
+}
+.buttons-general-block{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 25vw;
+  margin-top: 2vh;
+}
+.register-text{
+  margin-bottom: 5vh;
+  text-align: center;
+}
+.register-text-block{
+  margin-bottom: 2vh;
+}
+.list-sports p, h3 {
+  margin: 0;
+}
+.all_sports{
+  max-height: 180px;
+  overflow-y: auto;
+  width: 20vw;
+  overflow-x: hidden
+}
+.tittle{
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.list-sports p{
+  font-size: small;
+}
+.description-text{
+  width: 25vw;
+  resize: none;
+  border-radius: 25px;
+}
+
+.block p{
+  margin: 0;
+}
+.block img{
+  max-height: 150px;
+}
+
+@media (max-width: 992px) {
+  .custom-progress{
+    margin-bottom: 5vh;
+    width: 60vw;
+  }
+  .trio-input{
+    width: 50vw;
+  }
+  .buttons-general{
+    min-width: 35vw;
+  }
+  .buttons-general-block{
+    min-width: 35vw;
+  }
+  .list-genders, .list-sports, .block{
+    width: 50vw;
+  }
+  .all_sports, .description-text{
+    width: 40vw;
+  }
+
+}
+@media (max-width: 576px) {
+  .custom-progress{
+    margin-bottom: 5vh;
+    width: 70vw;
+  }
+  .trio-input{
+    width: 60vw;
+  }
+  .buttons-general{
+    min-width: 45vw;
+  }
+  .buttons-general-block{
+    min-width: 55vw;
+  }
+  .list-genders{
+    width: 60vw;
+  }
+}
+::-webkit-scrollbar {
+  width: 12px;
+  height: 12px; 
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* color del fondo */
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--trio); /* color de la barra */
+  border-radius: 10px;
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--trio2); /* hover de la barra */
+}
+
+.foto{
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.input-form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.add-activity-datepicker-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+  max-width: 535px;
+  width: 100%;
+}
+
+.add-activity-calendar-icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+}

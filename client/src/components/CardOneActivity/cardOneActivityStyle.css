@@ -1,0 +1,218 @@
+.trio-card-btn,
+.complete-btn,
+.finalized-btn,
+.trio-comment-btn,
+.abandon-btn {
+  color: white;
+  border-radius: 20px;
+  padding: 5px 15px;
+  border: none;
+  transition: background-color 0.3s ease;
+  min-height: 38px;
+  font-size: 14px;
+  font-size: 16px;
+}
+
+.trio-card-btn {
+  background-color: var(--trio);
+}
+
+.trio-card-btn:hover {
+  background-color: var(--trio2);
+}
+
+.abandon-btn {
+  background-color: var(--dark);
+}
+
+.abandon-btn:hover {
+  background-color: var(--dark2);
+}
+
+.complete-btn {
+  background-color: red;
+  cursor: not-allowed;
+  opacity: 0.65;
+  color: white;
+}
+
+.complete-btn.active {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.complete-btn.active:hover {
+  background-color: darkred;
+}
+
+.complete-btn.active .complete-text {
+  display: none;
+}
+
+.complete-btn.active .abandon-text {
+  display: block;
+}
+
+.finalized-btn {
+  background-color: #007bff;
+  color: white;
+  cursor: not-allowed;
+  opacity: 0.65;
+}
+
+.finalized-btn:disabled {
+  background-color: #007bff;
+  opacity: 0.65;
+  cursor: not-allowed;
+}
+
+.finalized-btn:hover:not([disabled]) {
+  background-color: #0056b3;
+}
+
+.trio-comment-btn {
+  background-color: var(--dark);
+  color: white;
+}
+
+.trio-comment-btn:hover {
+  background-color: var(--dark2);
+}
+
+@media (min-width: 1400px) {
+  .btn-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .btn-group .col-md-12 {
+    flex: 0 0 48%;
+    max-width: 48%;
+  }
+
+  .btn-group .btn {
+    width: 100%;
+  }
+}
+
+.card-img-custom {
+  position: relative;
+  border-radius: 8px;
+}
+
+.card-img-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  border-radius: 8px;
+}
+
+.card:hover .card-img-overlay {
+  opacity: 1;
+}
+.card-img-custom {
+  position: relative;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.card-img-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(24, 24, 24, 0.4);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  border-radius: 8px;
+}
+
+.card:hover .card-img-overlay {
+  opacity: 1;
+}
+
+@media (max-width: 1399px) {
+  .btn-group .col-md-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .btn-group .btn {
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .card-body {
+    text-align: center;
+  }
+
+  .card-title,
+  .card-text {
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  .btn-group {
+    justify-content: center;
+  }
+
+  .card-img-custom {
+    object-position: top;
+    height: 200px;
+  }
+
+  @media (max-width: 576px) {
+    .card-img-custom {
+      object-position: center top;
+      height: 200px;
+    }
+
+    .card-img-custom[src*="newsport.jpg"] {
+      object-position: center -100px;
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .card {
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .card-img-custom {
+    height: 200px;
+    object-fit: cover;
+  }
+
+  .col-md-6 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .btn-group {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 15px;
+  }
+
+  .btn-group .col-md-12 {
+    flex: 0 0 48%;
+    max-width: 48%;
+  }
+
+  .btn-group .btn {
+    width: 100%;
+  }
+
+}

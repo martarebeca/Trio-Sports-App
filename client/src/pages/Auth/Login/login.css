@@ -1,0 +1,52 @@
+.frase-login{
+  font-size: 2rem;
+  color: white;
+}
+
+.button-login{
+  font-size: 1.4rem;
+}
+
+.login-input{
+  border-radius: 20px;
+  transition: border-color 0.3s ease;
+  outline: none;
+  box-shadow: none;
+  width: 30vw;
+}
+
+.login-input:focus{
+  border-color: var(--trio);
+  outline: none;
+  box-shadow: none;
+} 
+
+
+.bg-photo{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)),url("/src/assets/images/login.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: calc(100vh - 58.72px);
+}
+
+.logo-login{
+  width: 28%;
+  margin-top: 100px;
+}
+
+.validation-color{
+  color: white;
+}
+
+@media (max-width: 700px){
+  .login-input{
+    width: 60vw;
+  }
+
+  .frase-login{
+    font-size: 1.2rem;
+  }
+}
+
+
